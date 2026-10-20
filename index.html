@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TechMart Student">
+    <title>TechMart | Mini Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- STORE HEADER -->
+    <header class="site-header">
+        <a class="logo" href="#home">
+            <span class="logo-icon">T</span>
+            Tech<span>Mart</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+            <a class="btn btn--login" href="#login">Login</a>
+            <a class="btn btn--cart" href="#products">
+                Cart <span class="cart-count">2</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="home">
+
+        <!-- HERO BANNER -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR TECH, YOUR STYLE</p>
+
+                <h1>Upgrade Your<br>Digital Lifestyle.</h1>
+
+                <p class="hero-description">
+                    Discover powerful laptops, immersive audio,
+                    and essential accessories at prices you'll love.
+                </p>
+
+                <a href="#products" class="btn btn--hero">
+                    Explore Products <span aria-hidden="true">→</span>
+                </a>
+
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Quality tech. Smart prices.
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-orbit"></div>
+                <div class="hero-device">
+                    <div class="device-screen">
+                        <span class="device-symbol">T</span>
+                        <span class="device-caption">TECHMART</span>
+                    </div>
+                    <div class="device-base"></div>
+                </div>
+                <div class="floating-tag floating-tag--top">
+                    ⚡ Performance
+                </div>
+                <div class="floating-tag floating-tag--bottom">
+                    ✦ Smart Deals
+                </div>
+            </div>
+        </section>
+
+        <!-- STORE BENEFITS -->
+        <section class="benefits" id="about">
+            <div class="benefit">
+                <span class="benefit-icon">🚚</span>
+                <div>
+                    <strong>Fast Delivery</strong>
+                    <p>Convenient shipping</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <span class="benefit-icon">🛡️</span>
+                <div>
+                    <strong>Quality Products</strong>
+                    <p>Shop with confidence</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <span class="benefit-icon">💳</span>
+                <div>
+                    <strong>Easy Shopping</strong>
+                    <p>Simple and convenient</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS SECTION -->
+        <section class="products-section" id="products">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow--light">THE TECH COLLECTION</p>
+                    <h2>Find Your Next Favorite.</h2>
+                    <p class="section-description">
+                        Great technology for work, study, and play.
+                    </p>
+                </div>
+
+                <span class="product-total">04 PRODUCTS</span>
+            </div>
+
+            <!-- CATEGORY FILTERS -->
+            <div class="filter-bar" aria-label="Product categories">
+                <a class="filter-pill filter-pill--active"
+                   href="#products" aria-current="true">All Products</a>
+                <a class="filter-pill" href="#laptops">Laptops</a>
+                <a class="filter-pill" href="#headphones">Headphones</a>
+                <a class="filter-pill" href="#accessories">Accessories</a>
+            </div>
+
+            <!-- RESPONSIVE PRODUCT GRID -->
+            <div class="product-grid">
+
+                <!-- PRODUCT 1 -->
+                <article class="product-card product-card--sale"
+                         id="laptops">
+
+                    <div class="product-image product-image--laptop">
+                        <span class="product-badge">SALE</span>
+                        <span class="product-emoji" aria-hidden="true">💻</span>
+                        <span class="image-caption">PRO SERIES</span>
+                        <button class="favorite" type="button"
+                                aria-label="Favorite ProBook Laptop">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">LAPTOPS</p>
+                        <h3>TechBook Pro 14</h3>
+                        <p class="product-description">
+                            Powerful performance for work and study.
+                        </p>
+
+                        <div class="product-rating" data-rating="4.9">
+                            <span>★★★★★</span>
+                            <span class="rating-number">4.9</span>
+                            <span class="review-count">(128)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <strong>₱42,999</strong>
+                            <del>₱49,999</del>
+                        </div>
+
+                        <button class="btn btn--product btn--added"
+                                type="button">
+                            Add to Cart <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 2 -->
+                <article class="product-card" id="headphones">
+
+                    <div class="product-image product-image--headphones">
+                        <span class="product-emoji" aria-hidden="true">🎧</span>
+                        <span class="image-caption">PURE SOUND</span>
+                        <button class="favorite" type="button"
+                                aria-label="Favorite wireless headphones">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">AUDIO</p>
+                        <h3>WaveSound Wireless</h3>
+                        <p class="product-description">
+                            Comfortable headphones with rich sound.
+                        </p>
+
+                        <div class="product-rating" data-rating="4.8">
+                            <span>★★★★★</span>
+                            <span class="rating-number">4.8</span>
+                            <span class="review-count">(96)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <strong>₱2,499</strong>
+                        </div>
+
+                        <button class="btn btn--product" type="button">
+                            Add to Cart <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 3 -->
+                <article class="product-card product-card--low-stock"
+                         id="accessories">
+
+                    <div class="product-image product-image--mouse">
+                        <span class="product-emoji" aria-hidden="true">🖱️</span>
+                        <span class="image-caption">PRECISION CONTROL</span>
+                        <button class="favorite" type="button"
+                                aria-label="Favorite wireless mouse">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">ACCESSORIES</p>
+                        <h3>ClickPro Wireless Mouse</h3>
+                        <p class="product-description">
+                            Smooth control for productivity and gaming.
+                        </p>
+
+                        <div class="product-rating" data-rating="4.7">
+                            <span>★★★★★</span>
+                            <span class="rating-number">4.7</span>
+                            <span class="review-count">(74)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <strong>₱899</strong>
+                        </div>
+
+                        <button class="btn btn--product" type="button">
+                            Add to Cart <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 4 -->
+                <article class="product-card">
+
+                    <div class="product-image product-image--keyboard">
+                        <span class="product-emoji" aria-hidden="true">⌨️</span>
+                        <span class="image-caption">GAMING SERIES</span>
+                        <button class="favorite" type="button"
+                                aria-label="Favorite mechanical keyboard">♡</button>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">ACCESSORIES</p>
+                        <h3>RGB Mech Keyboard</h3>
+                        <p class="product-description">
+                            Responsive keys with a colorful setup.
+                        </p>
+
+                        <div class="product-rating" data-rating="4.8">
+                            <span>★★★★★</span>
+                            <span class="rating-number">4.8</span>
+                            <span class="review-count">(112)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <strong>₱1,799</strong>
+                            <del>₱2,199</del>
+                        </div>
+
+                        <button class="btn btn--product" type="button">
+                            Add to Cart <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROMOTIONAL STRIP -->
+        <section class="promo-strip">
+            <div>
+                <p class="eyebrow">SMART SHOPPING STARTS HERE</p>
+                <h2>Make Every Click Count.</h2>
+                <p>Find the right tech to power your next big idea.</p>
+            </div>
+
+            <a href="#products" class="btn btn--promo">
+                Shop Collection →
+            </a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <a class="logo logo--footer" href="#home">
+            <span class="logo-icon">T</span>
+            Tech<span>Mart</span>
+        </a>
+
+        <p>Your destination for everyday technology.</p>
+
+        <p class="footer-copy">
+            &copy; 2026 TechMart. Student UI project.
+        </p>
+    </footer>
+
+</body>
+</html>
